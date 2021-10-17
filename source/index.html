@@ -1,0 +1,1728 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ЛофтРадар</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="header">
+  <div class="header__container container">
+
+    <button class="header__burger burger">
+      <svg class="burger__icon" width="32" height="32" aria-hidden="true" role="img">
+        <use xlink:href="#icon-plus"></use>
+      </svg>
+      <span class="visually-hidden">Переключатель меню</span>
+    </button>
+
+    <div class="header__logo logo logo--link">
+      <img class="logo__image" src="img/logo.svg" width="158" height="38" alt="Логотип"/>
+      <a href="index.html" class="logo__link">
+        <span class="visually-hidden">Главная страница</span>
+      </a>
+    </div>
+
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Все лофты Москвы
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Идеи
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Избранное
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__add-button header-button header-button--add">
+      <svg class="header-button__icon" width="24" height="24" aria-hidden="true" role="img">
+        <use xlink:href="#icon-plus"></use>
+      </svg>
+      <span class="header-button__text">
+        Добавить площадку
+      </span>
+    </button>
+
+    <button class="header-button header-button--login">
+      <svg class="header-button__icon" width="24" height="24" aria-hidden="true" role="img">
+        <use xlink:href="#icon-user"></use>
+      </svg>
+      <span class="header-button__text">
+        Войти
+      </span>
+    </button>
+
+  </div>
+</header>
+
+<section class="usp">
+  <div class="container usp__container">
+
+    <div class="usp__content">
+
+      <h1 class="usp__title">
+        Более 500 площадок для вашего мероприятия
+      </h1>
+
+      <form class="usp__filter">
+
+        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--big dropdown" id="event-type">
+          <span class="dropdown__text">
+            Тип мероприятий
+          </span>
+          <svg class="dropdown__icon" width="20" height="20" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--big dropdown" id="event-date">
+          <span class="dropdown__text">
+            Дата мероприятий
+          </span>
+          <svg class="dropdown__icon" width="20" height="20" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--small dropdown" id="event-time-start">
+          <span class="dropdown__text">
+            Начало
+          </span>
+          <svg class="dropdown__icon" width="20" height="20" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--small dropdown" id="event-time-end">
+          <span class="dropdown__text">
+            Конец
+          </span>
+          <svg class="dropdown__icon" width="20" height="20" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <button type="submit" class="usp__filter-button button button-icon-left">
+          <svg class="button__icon" width="24" height="24" aria-hidden="true" role="img">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+          <span class="button__text">
+            Найти
+          </span>
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="advantages">
+  <div class="container advantages__container">
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <img class="advantages__icon" src="img/advantages/discount.svg" width="40" height="40" alt="Иконка"/>
+        <p class="advantages__text">
+          <span class="advantages__bold">Без комиссии</span> — не переплачивайте за аренду
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img class="advantages__icon" src="img/advantages/calendar.svg" width="40" height="40" alt="Иконка"/>
+        <p class="advantages__text">
+          <span class="advantages__bold">Онлайн-календари</span> — выбирайте только среди свободных площадок
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img class="advantages__icon" src="img/advantages/note.svg" width="40" height="40" alt="Иконка"/>
+        <p class="advantages__text">
+          <span class="advantages__bold">Прямые контакты площадок</span> <br>— общение без посредников
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="rubric">
+  <div class="container rubric__container">
+
+    <div class="rubric__header">
+      <h2 class="rubric__title title title--h2">
+        Мы рекомендуем
+      </h2>
+      <a href="#" class="rubric__more more">
+        <span class="more__text">
+          Смотреть все
+        </span>
+        <svg class="more__icon" width="20" height="20" aria-hidden="true" role="img">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="rubric__list">
+      <li class="rubric__item">
+
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-1.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-2.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-3.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<section class="rubric">
+  <div class="container rubric__container">
+
+    <div class="rubric__header">
+      <h2 class="rubric__title title title--h2">
+        Любой тип площадки
+      </h2>
+    </div>
+
+    <div class="categories__container">
+
+      <div class="categories__row">
+
+        <div class="categories__item categories__item--big category">
+          <img class="category__image" src="img/places/place-1.jpg" width="570" height="330" alt="Все площадки"/>
+          <span class="category__label">
+            Все площадки
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Все площадки</span>
+          </a>
+        </div>
+
+        <div class="categories__item categories__item--thin category">
+          <img class="category__image" src="img/places/place-2.jpg" width="370" height="220" alt="Коворкинги"/>
+          <span class="category__label">
+            Коворкинги
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Коворкинги</span>
+          </a>
+        </div>
+
+        <div>
+
+          <div class="categories__item categories__item--small category category--small">
+            <img class="category__image" src="img/places/place-3.jpg" width="370" height="220"
+                 alt="Банкетные залы для свадеб"/>
+            <span class="category__label">
+              Банкетные залы для свадеб
+            </span>
+            <a href="#" class="category__link">
+              <span class="visually-hidden">Банкетные залы для свадеб</span>
+            </a>
+          </div>
+
+          <div class="categories__item categories__item--small category category--small">
+            <img class="category__image" src="img/places/place-4.jpg" width="370" height="220" alt="Танцевальные залы"/>
+            <span class="category__label">
+              Танцевальные залы
+            </span>
+            <a href="#" class="category__link">
+              <span class="visually-hidden">Танцевальные залы</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="categories__row">
+
+        <div class="categories__item category">
+          <img class="category__image" src="img/places/place-5.jpg" width="370" height="220"
+               alt="Площадки для выпускных"/>
+          <span class="category__label">
+            Площадки для выпускных
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Площадки для выпускных</span>
+          </a>
+        </div>
+
+        <div class="categories__item category">
+          <img class="category__image" src="img/places/place-6.jpg" width="370" height="220"
+               alt="Площадки для переговоров"/>
+          <span class="category__label">
+            Площадки для переговоров
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Площадки для переговоров</span>
+          </a>
+        </div>
+
+        <div class="categories__item category">
+          <img class="category__image" src="img/places/place-7.jpg" width="370" height="220" alt="Лофты для вечеринок"/>
+          <span class="category__label">
+            Лофты для вечеринок
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Лофты для вечеринок</span>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="categories__row">
+
+        <div class="categories__item category">
+          <img class="category__image" src="img/places/place-8.jpg" width="270" height="330" alt="Бары для вечеринок"/>
+          <span class="category__label">
+            Бары для вечеринок
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Бары для вечеринок</span>
+          </a>
+        </div>
+
+        <div class="categories__item category">
+          <img class="category__image" src="img/places/place-9.jpg" width="270" height="150"
+               alt="Площадки  в центре Москвы"/>
+          <span class="category__label">
+            Площадки  в центре Москвы
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Площадки  в центре Москвы</span>
+          </a>
+        </div>
+
+        <div class="categories__item category">
+          <img class="category__image" src="img/places/place-10.jpg" width="270" height="150" alt="Лофты на 15 гостей"/>
+          <span class="category__label">
+            Лофты на 15 гостей
+          </span>
+          <a href="#" class="category__link">
+            <span class="visually-hidden">Лофты на 15 гостей</span>
+          </a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="rubric">
+  <div class="container rubric__container">
+
+    <div class="rubric__header">
+      <h2 class="rubric__title title title--h2">
+        Площадки для корпоративов
+      </h2>
+      <a href="#" class="rubric__more more">
+        <span class="more__text">
+          Смотреть все
+        </span>
+        <svg class="more__icon" width="20" height="20" aria-hidden="true" role="img">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="rubric__list">
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-4.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-5.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-6.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<section class="rubric">
+  <div class="container rubric__container">
+
+    <div class="rubric__header">
+      <h2 class="rubric__title title title--h2">
+        Площадки для Дня рождения
+      </h2>
+      <a href="#" class="rubric__more more">
+        <span class="more__text">
+          Смотреть все
+        </span>
+        <svg class="more__icon" width="20" height="20" aria-hidden="true" role="img">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="rubric__list">
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-6.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-4.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-5.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<section class="rubric">
+  <div class="container rubric__container">
+
+    <div class="rubric__header">
+      <h2 class="rubric__title title title--h2">
+        Площадки для детских праздников
+      </h2>
+      <a href="#" class="rubric__more more">
+        <span class="more__text">
+          Смотреть все
+        </span>
+        <svg class="more__icon" width="20" height="20" aria-hidden="true" role="img">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="rubric__list">
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-1.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-2.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+
+      <li class="rubric__item">
+        <div class="card">
+
+          <div class="card__image-container">
+            <img class="card__image" src="img/cards/card-3.jpg" width="330" height="250"
+                 alt="Лофт из белого кирпича с верандой">
+            <button class="card__like like like--small like--white" onclick="console.log('like')">
+              <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+          </div>
+
+          <div class="card__info-container">
+            <h4 class="card__title">
+              Лофт из белого кирпича с верандой
+            </h4>
+
+            <div class="card__row card__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <div class="card__row card__rating rating">
+              <ul class="rating__stars stars">
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+                <li class="stars__item">
+                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+            </div>
+
+            <div class="card__price price">
+              от <span class="price__value">3000 ₽</span> / час
+            </div>
+
+            <ul class="card__features features">
+              <li class="features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+            </ul>
+
+          </div>
+
+          <a href="#" class="card__link">
+            <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
+          </a>
+
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__container container">
+
+    <div class="footer__left">
+
+      <p class="footer__desc">
+        «Loft Radar» — сервис бронирования лофтов и студий для мероприятий. Через наш сайт вы найдёте площадку под любой
+        тип мероприятия быстрее, чем номер в отеле или товар в интернет-магазине.
+      </p>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <svg class="social__icon" width="12" height="24" aria-hidden="true" role="img">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+          <a class="social__link" href="https://facebook.com/" target="_blank">
+            <span class="visually-hidden">Ссылка на Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <svg class="social__icon" width="24" height="24" aria-hidden="true" role="img">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+          <a class="social__link" href="https://www.instagram.com" target="_blank">
+            <span class="visually-hidden">Ссылка на Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <svg class="social__icon" width="24" height="14" aria-hidden="true" role="img">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+          <a class="social__link" href="https://vk.com" target="_blank">
+            <span class="visually-hidden">Ссылка на VK</span>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © 2021. Все права защищены и принадлежат ООО «Лофт-Радар»
+      </p>
+
+    </div>
+
+    <nav class="footer__nav">
+      <nav class="footer__menu-big footer-menu">
+        <p class="footer__title">
+          Меню сайта
+        </p>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Маркетплейс
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Журнал Bash Life
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              FAQ
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Поддержка в организации мероприятий
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Реклама услуг для мероприятий
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Индивидуальный подбор
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Площадки на карте
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Контакты администрации
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Разместить свою площадку
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Пользовательское соглашение
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Оферта исполнителю услуг
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__menu-small footer-menu">
+        <p class="footer__title">
+          Москва
+        </p>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Площадки для девичников
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Ресторан для свадьбы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Рестораны и банкетные залы Москвы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Бары Москвы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Студии для фотосессии
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Площадки с караоке
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Лофты на Бауманской
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Аренда сцены
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Арт-пространства Москвы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Двухуровневые лофты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+
+    <div class="footer__contacts contacts">
+      <p class="footer__title">
+        Контакты
+      </p>
+
+      <p class="contacts__address">
+        107140, Россия, Москва, ул. Русаковская 1, офис 203
+      </p>
+      <a class="contacts__tel" href="tel:+74954097873">
+        +7 (495) 409-7873
+      </a>
+      <p class="contacts__work-time">
+        10:00–19:00, пн–пт
+      </p>
+      <a href="mailto:info@loft-radar.io" class="contacts__email">
+        info@loft-radar.io
+      </a>
+
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

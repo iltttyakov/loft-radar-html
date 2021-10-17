@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+button {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
