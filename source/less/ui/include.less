@@ -1,0 +1,38 @@
+.include {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 23px;
+}
+
+.include__column {
+
+}
+
+.include__item {
+  position: relative;
+
+  padding-left: 25px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+
+    background-image: url("../../img/check.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

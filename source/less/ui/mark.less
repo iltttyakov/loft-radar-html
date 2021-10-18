@@ -1,0 +1,51 @@
+.mark {
+  width: 100%;
+}
+
+.mark__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  transition: all .2s ease;
+}
+
+.mark__count {
+  margin-left: 10px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #787B7E;
+}
+
+.mark__label {
+  min-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    .mark__text {
+      color: #0A8CEB;
+    }
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}
+
+.mark__input:checked + .mark__label {
+  background-color: #F4F5F9;
+
+  .mark__text {
+    color: #0A8CEB;
+  }
+}

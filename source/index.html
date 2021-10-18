@@ -23,11 +23,8 @@
       <span class="visually-hidden">Переключатель меню</span>
     </button>
 
-    <div class="header__logo logo logo--link">
+    <div class="header__logo logo">
       <img class="logo__image" src="img/logo.svg" width="158" height="38" alt="Логотип"/>
-      <a href="index.html" class="logo__link">
-        <span class="visually-hidden">Главная страница</span>
-      </a>
     </div>
 
     <nav class="header__menu menu">
@@ -59,14 +56,14 @@
       </span>
     </button>
 
-    <button class="header-button header-button--login">
+    <a href="login.html" class="header-button header-button--login">
       <svg class="header-button__icon" width="24" height="24" aria-hidden="true" role="img">
         <use xlink:href="#icon-user"></use>
       </svg>
       <span class="header-button__text">
         Войти
       </span>
-    </button>
+    </a>
 
   </div>
 </header>
@@ -82,7 +79,11 @@
 
       <form class="usp__filter">
 
-        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--big dropdown" id="event-type">
+        <button
+          class="usp__dropdown usp__dropdown--big dropdown"
+          type="button" id="event-type-dropdown"
+          data-popup="event-type-popup"
+        >
           <span class="dropdown__text">
             Тип мероприятий
           </span>
@@ -91,7 +92,124 @@
           </svg>
         </button>
 
-        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--big dropdown" id="event-date">
+        <div class="usp__popup popup" id="event-type-popup">
+          <div class="popup__content marks">
+            <div class="marks__column">
+              <p class="marks__title">
+                День рождения
+              </p>
+              <ul class="marks__list">
+                <li class="marks__item mark">
+                  <input id="event-type-1" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-1" class="mark__label">
+                    <span class="mark__text">День рождения</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-2" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-2" class="mark__label">
+                    <span class="mark__text">Вечеринка</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-3" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-3" class="mark__label">
+                    <span class="mark__text">Свадьба</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-4" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-4" class="mark__label">
+                    <span class="mark__text">Детский день рождения</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-5" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-5" class="mark__label">
+                    <span class="mark__text">Выпускной</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-6" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-6" class="mark__label">
+                    <span class="mark__text">Девичник</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-7" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-7" class="mark__label">
+                    <span class="mark__text">Мальчишник</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="marks__column">
+              <p class="marks__title">
+                Съемки
+              </p>
+              <ul class="marks__list">
+                <li class="marks__item mark">
+                  <input id="event-type-9" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-9" class="mark__label">
+                    <span class="mark__text">Онлайн-конференция</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-10" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-10" class="mark__label">
+                    <span class="mark__text">Онлайн-трансляции</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-11" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-11" class="mark__label">
+                    <span class="mark__text">Онлайн-обучение</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-12" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-12" class="mark__label">
+                    <span class="mark__text">Онлайн-переговоры</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-13" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-13" class="mark__label">
+                    <span class="mark__text">Видеосъемка</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-14" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-14" class="mark__label">
+                    <span class="mark__text">Фотосъемка</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+                <li class="marks__item mark">
+                  <input id="event-type-15" type="checkbox" class="mark__input visually-hidden">
+                  <label for="event-type-15" class="mark__label">
+                    <span class="mark__text">Репетиция</span>
+                    <span class="mark__count">25</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="usp__dropdown usp__dropdown--big dropdown" id="event-date">
           <span class="dropdown__text">
             Дата мероприятий
           </span>
@@ -100,7 +218,7 @@
           </svg>
         </button>
 
-        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--small dropdown" id="event-time-start">
+        <button type="button" class="usp__dropdown usp__dropdown--small dropdown" id="event-time-start">
           <span class="dropdown__text">
             Начало
           </span>
@@ -109,7 +227,7 @@
           </svg>
         </button>
 
-        <button type="button" class="usp__filter-dropdown usp__filter-dropdown--small dropdown" id="event-time-end">
+        <button type="button" class="usp__dropdown usp__dropdown--small dropdown" id="event-time-end">
           <span class="dropdown__text">
             Конец
           </span>
@@ -215,27 +333,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -267,7 +385,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -311,27 +429,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -363,7 +481,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -407,27 +525,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -459,7 +577,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -662,27 +780,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -714,7 +832,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -758,27 +876,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -810,7 +928,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -854,27 +972,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -906,7 +1024,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -972,27 +1090,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -1024,7 +1142,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -1068,27 +1186,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -1120,7 +1238,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -1164,27 +1282,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -1216,7 +1334,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -1282,27 +1400,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -1334,7 +1452,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -1378,27 +1496,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -1430,7 +1548,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -1474,27 +1592,27 @@
             <div class="card__row card__rating rating">
               <ul class="rating__stars stars">
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon stars__icon--active" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
                 <li class="stars__item">
-                  <svg class="stars__icon" width="14" height="14" aria-hidden="true" role="img">
+                  <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
                     <use xlink:href="#icon-star"></use>
                   </svg>
                 </li>
@@ -1526,7 +1644,7 @@
 
           </div>
 
-          <a href="#" class="card__link">
+          <a href="single.html" class="card__link">
             <span class="visually-hidden">Лофт из белого кирпича с верандой</span>
           </a>
 
@@ -1723,6 +1841,60 @@
 
   </div>
 </footer>
+
+
+<div class="filter__overlay overlay" id="overlay"></div>
+
+<script>
+  window.onload = function () {
+    const overlay = document.querySelector('#overlay')
+
+    /**
+     * Обрабаывает инициализацию overlay
+     */
+    const toggleOverlay = (clickHandler = () => null) => {
+      overlay.classList.toggle('overlay--open')
+
+      overlay.addEventListener('click', () => {
+        clickHandler()
+        overlay.classList.remove('overlay--open')
+      }, {once: true})
+    }
+
+    /**
+     * Переключает видимость popup
+     */
+    const togglePopup = (element) => {
+      element.classList.toggle('popup--open')
+    }
+
+    /**
+     * Обработчик клика на dropdown-элемент
+     * @param event
+     */
+    const dropdownClickHandler = (event) => {
+      const dropdown = event.target.classList.contains('dropdown')
+        ? event.target
+        : event.target.closest('.dropdown')
+      const popup = document.getElementById(dropdown.getAttribute('data-popup'))
+
+      dropdown.classList.toggle('dropdown--open')
+      togglePopup(popup)
+
+      toggleOverlay(() => {
+        dropdown.classList.toggle('dropdown--open')
+        togglePopup(popup)
+      })
+    }
+
+    const dropdownElements = document.querySelectorAll(".dropdown");
+    dropdownElements.forEach((element) => {
+      element.addEventListener('click', event => dropdownClickHandler(event))
+    })
+
+  }
+</script>
+
 
 </body>
 </html>

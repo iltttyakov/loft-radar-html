@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ЛофтРадар</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="header">
+  <div class="header__container container">
+
+    <button class="header__burger burger">
+      <svg class="burger__icon" width="32" height="32" aria-hidden="true" role="img">
+        <use xlink:href="#icon-plus"></use>
+      </svg>
+      <span class="visually-hidden">Переключатель меню</span>
+    </button>
+
+    <div class="header__logo logo logo--link">
+      <img class="logo__image" src="img/logo.svg" width="158" height="38" alt="Логотип"/>
+      <a href="index.html" class="logo__link">
+        <span class="visually-hidden">Главная страница</span>
+      </a>
+    </div>
+
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Все лофты Москвы
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Идеи
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Избранное
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__add-button header-button header-button--add">
+      <svg class="header-button__icon" width="24" height="24" aria-hidden="true" role="img">
+        <use xlink:href="#icon-plus"></use>
+      </svg>
+      <span class="header-button__text">
+        Добавить площадку
+      </span>
+    </button>
+
+    <a href="login.html" class="header-button header-button--login">
+      <svg class="header-button__icon" width="24" height="24" aria-hidden="true" role="img">
+        <use xlink:href="#icon-user"></use>
+      </svg>
+      <span class="header-button__text">
+        Войти
+      </span>
+    </a>
+
+  </div>
+</header>
+
+
+
+<footer class="footer">
+  <div class="footer__container container">
+
+    <div class="footer__left">
+
+      <p class="footer__desc">
+        «Loft Radar» — сервис бронирования лофтов и студий для мероприятий. Через наш сайт вы найдёте площадку под любой
+        тип мероприятия быстрее, чем номер в отеле или товар в интернет-магазине.
+      </p>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <svg class="social__icon" width="12" height="24" aria-hidden="true" role="img">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+          <a class="social__link" href="https://facebook.com/" target="_blank">
+            <span class="visually-hidden">Ссылка на Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <svg class="social__icon" width="24" height="24" aria-hidden="true" role="img">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+          <a class="social__link" href="https://www.instagram.com" target="_blank">
+            <span class="visually-hidden">Ссылка на Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <svg class="social__icon" width="24" height="14" aria-hidden="true" role="img">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+          <a class="social__link" href="https://vk.com" target="_blank">
+            <span class="visually-hidden">Ссылка на VK</span>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © 2021. Все права защищены и принадлежат ООО «Лофт-Радар»
+      </p>
+
+    </div>
+
+    <nav class="footer__nav">
+      <nav class="footer__menu-big footer-menu">
+        <p class="footer__title">
+          Меню сайта
+        </p>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Маркетплейс
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Журнал Bash Life
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              FAQ
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Поддержка в организации мероприятий
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Реклама услуг для мероприятий
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Индивидуальный подбор
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Площадки на карте
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Контакты администрации
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Разместить свою площадку
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Пользовательское соглашение
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Оферта исполнителю услуг
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__menu-small footer-menu">
+        <p class="footer__title">
+          Москва
+        </p>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Площадки для девичников
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Ресторан для свадьбы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Рестораны и банкетные залы Москвы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Бары Москвы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Студии для фотосессии
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Площадки с караоке
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Лофты на Бауманской
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Аренда сцены
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Арт-пространства Москвы
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+              Двухуровневые лофты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+
+    <div class="footer__contacts contacts">
+      <p class="footer__title">
+        Контакты
+      </p>
+
+      <p class="contacts__address">
+        107140, Россия, Москва, ул. Русаковская 1, офис 203
+      </p>
+      <a class="contacts__tel" href="tel:+74954097873">
+        +7 (495) 409-7873
+      </a>
+      <p class="contacts__work-time">
+        10:00–19:00, пн–пт
+      </p>
+      <a href="mailto:info@loft-radar.io" class="contacts__email">
+        info@loft-radar.io
+      </a>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<div class="filter__overlay overlay" id="overlay"></div>
+
+<script>
+  window.onload = function () {
+    const overlay = document.querySelector('#overlay')
+
+    /**
+     * Обрабаывает инициализацию overlay
+     */
+    const toggleOverlay = (clickHandler = () => null) => {
+      overlay.classList.toggle('overlay--open')
+
+      overlay.addEventListener('click', () => {
+        clickHandler()
+        overlay.classList.remove('overlay--open')
+      }, {once: true})
+    }
+
+    /**
+     * Переключает видимость popup
+     */
+    const togglePopup = (element) => {
+      element.classList.toggle('popup--open')
+    }
+
+    /**
+     * Обработчик клика на dropdown-элемент
+     * @param event
+     */
+    const dropdownClickHandler = (event) => {
+      const dropdown = event.target.classList.contains('dropdown')
+        ? event.target
+        : event.target.closest('.dropdown')
+      const popup = document.getElementById(dropdown.getAttribute('data-popup'))
+
+      dropdown.classList.toggle('dropdown--open')
+      togglePopup(popup)
+
+      toggleOverlay(() => {
+        dropdown.classList.toggle('dropdown--open')
+        togglePopup(popup)
+      })
+    }
+
+    const dropdownElements = document.querySelectorAll(".dropdown");
+    dropdownElements.forEach((element) => {
+      element.addEventListener('click', event => dropdownClickHandler(event))
+    })
+
+  }
+</script>
+
+
+</body>
+</html>

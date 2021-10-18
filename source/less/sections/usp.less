@@ -22,6 +22,9 @@
 }
 
 .usp__filter {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   padding: 15px;
   padding-right: 19px;
@@ -31,7 +34,7 @@
   border-radius: 15px;
 }
 
-.usp__filter-dropdown {
+.usp__dropdown {
   margin-right: 15px;
   flex-shrink: 1;
 
@@ -42,4 +45,10 @@
   &--small {
     width: 150px;
   }
+}
+
+.usp__popup {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 15px);
 }
