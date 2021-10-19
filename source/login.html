@@ -86,14 +86,14 @@
         У вас еще нет аккаунта? <a href="#" class="authentication__link">Зарегистрироваться</a>
       </p>
 
-      <form class="login__form form">
+      <form class="authentication__form form">
         <div class="form__group">
-          <label>
+          <label class="form__label">
             <input class="form__input input" type="email" placeholder="Email" name="email"/>
           </label>
         </div>
         <div class="form__group">
-          <label>
+          <label class="form__label">
             <input class="form__input input" type="password" placeholder="Пароль" name="password"/>
           </label>
           <div class="form__hint">
@@ -103,33 +103,31 @@
           </div>
         </div>
         <button class="form__button button">
-          Войти
+          <span class="button__text">Войти</span>
         </button>
       </form>
 
-      <p class="login__">
-        или войдите с помощью соц. сетей
+      <p class="authentication__footer">
+        <span class="authentication__footer-label">
+          или войдите с помощью соц. сетей
+        </span>
       </p>
 
-      <ul class="auth">
-        <li class="auth__item">
-          <a href="#" class="button button--small button--secondary button-icon-left">
+      <ul class="authentication__social">
+        <li class="authentication__item">
+          <a href="#" class="authentication__social-button button button--small button--secondary button-icon-left">
             <svg class="button__icon" width="24" height="24" aria-hidden="true" role="img">
               <use xlink:href="#icon-vk-fill"></use>
             </svg>
-            <span class="button__text">
-            Вконтакте
-          </span>
+            <span class="button__text">Вконтакте</span>
           </a>
         </li>
-        <li class="auth__item">
-          <a href="#" class="button button--small button--secondary button-icon-left">
+        <li class="authentication__item">
+          <a href="#" class="authentication__social-button button button--small button--secondary button-icon-left">
             <svg class="button__icon" width="24" height="24" aria-hidden="true" role="img">
               <use xlink:href="#icon-facebook-fill"></use>
             </svg>
-            <span class="button__text">
-            Facebook
-          </span>
+            <span class="button__text">Facebook</span>
           </a>
         </li>
       </ul>

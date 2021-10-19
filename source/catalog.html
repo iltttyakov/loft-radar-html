@@ -13,7 +13,8 @@
   <include src="build/img/sprite.svg"></include>
 </div>
 
-<header class="header">
+
+<header class="header header--inner">
   <div class="header__container container">
 
     <button class="header__burger burger">
@@ -71,6 +72,1198 @@
   </div>
 </header>
 
+
+<section class="catalog">
+
+  <div class="catalog__header container">
+
+    <div class="filter">
+
+      <button class="filter__button">
+        <span>Событие</span>
+        <svg class="filter__icon" width="16" height="16" aria-hidden="true" role="img">
+          <use xlink:href="#icon-arrow"></use>
+        </svg>
+      </button>
+
+      <button class="filter__button">
+        <span>Стоимость</span>
+      </button>
+
+      <button class="filter__button">
+        <span>Даты</span>
+      </button>
+
+      <button class="filter__button">
+        <span>Фильтры</span>
+        <svg class="filter__icon" width="16" height="16" aria-hidden="true" role="img">
+          <use xlink:href="#icon-arrow"></use>
+        </svg>
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="catalog__container container">
+    <div class="catalog__content">
+
+      <h1 class="catalog__title title title--h1">
+        Все лофты Москвы в аренду под мероприятия
+      </h1>
+
+      <ul class="catalog__list">
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="catalog__item">
+
+          <div class="preview">
+
+            <div class="preview__images-container">
+
+              <ul class="preview__stickers">
+                <li class="preview__sticker sticker sticker--orange">
+                  Выгодная цена
+                </li>
+                <li class="preview__sticker sticker sticker--green">
+                  Лучшее предложение
+                </li>
+              </ul>
+
+              <div class="preview__slider slider">
+                <div class="slider__track">
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-1.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-2.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-3.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-4.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-5.jpg" width="515" height="320" alt=""/>
+                  </div>
+                  <div class="slider__slide">
+                    <img class="slider__image" src="img/preview/preview-6.jpg" width="515" height="320" alt=""/>
+                  </div>
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <button class="slider__arrow slider__arrow--next" aria-label="Следующий">
+                  <svg class="slider__icon" width="40" height="40" aria-hidden="true" role="img">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </button>
+
+                <div class="slider__dots" role="tablist"></div>
+              </div>
+
+              <button class="preview__like like like--big like--white" onclick="console.log('like')">
+                <svg class="like__icon" width="20" height="20" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </button>
+            </div>
+
+            <h3 class="preview__title">
+              <a href="single.html" class="preview__link">
+                Большая гостиная с панорамными окнами и кухней #3106
+              </a>
+            </h3>
+
+            <div class="preview__location location">
+              <div class="location__metro metro">
+                <svg class="metro__icon metro__icon--orange" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="metro__name">Бауманская</span>
+              </div>
+              <div class="location__distance distance">
+                <svg class="distance__icon" width="12" height="12" aria-hidden="true" role="img">
+                  <use xlink:href="#icon-walk"></use>
+                </svg>
+                <span class="distance__value">7 мин.</span>
+              </div>
+            </div>
+
+            <ul class="preview__features features">
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/people.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">25 чел</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/bed.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">38 мест</span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/square.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">210 m<sup>2</sup></span>
+              </li>
+              <li class="preview__feature features__item">
+                <img class="features__icon" src="img/features/food.svg" width="24" height="24" alt="Иконка"/>
+                <span class="features__value">Еда с собой</span>
+              </li>
+            </ul>
+
+            <div class="preview__footer">
+              <div class="preview__price price">
+                от <span class="price__value">3000 ₽</span> / час
+              </div>
+              <div class="preview__rating rating">
+                <ul class="rating__stars stars">
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star star--active" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="stars__item">
+                    <svg class="stars__icon star" width="14" height="14" aria-hidden="true" role="img">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <span class="rating__total">
+                4.0 <span class="rating__count">(15 отзывов)</span>
+              </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+      </ul>
+
+      <button class="catalog__load load">
+        <svg class="load__icon" width="24" height="24" aria-hidden="true" role="img">
+          <use xlink:href="#icon-load"></use>
+        </svg>
+        <span class="load__text">
+          Показать еще
+        </span>
+      </button>
+
+    </div>
+  </div>
+
+</section>
 
 
 <footer class="footer">
@@ -261,54 +1454,32 @@
 </footer>
 
 
-<div class="filter__overlay overlay" id="overlay"></div>
-
+<script src="js/glider.min.js"></script>
 <script>
   window.onload = function () {
-    const overlay = document.querySelector('#overlay')
 
-    /**
-     * Обрабаывает инициализацию overlay
-     */
-    const toggleOverlay = (clickHandler = () => null) => {
-      overlay.classList.toggle('overlay--open')
 
-      overlay.addEventListener('click', () => {
-        clickHandler()
-        overlay.classList.remove('overlay--open')
-      }, {once: true})
+    const initSlider = (prevArrow, nextArrow, dots) => {
+      return {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: {
+          prev: prevArrow,
+          next: nextArrow
+        },
+        dots: dots
+      }
     }
 
-    /**
-     * Переключает видимость popup
-     */
-    const togglePopup = (element) => {
-      element.classList.toggle('popup--open')
-    }
+    const sliders = document.querySelectorAll('.slider__track')
+    sliders.forEach(slider => {
+      const prevArrow = slider.parentElement.querySelector('.slider__arrow--prev')
+      const nextArrow = slider.parentElement.querySelector('.slider__arrow--next')
+      const dots = slider.parentElement.querySelector('.slider__dots')
 
-    /**
-     * Обработчик клика на dropdown-элемент
-     * @param event
-     */
-    const dropdownClickHandler = (event) => {
-      const dropdown = event.target.classList.contains('dropdown')
-        ? event.target
-        : event.target.closest('.dropdown')
-      const popup = document.getElementById(dropdown.getAttribute('data-popup'))
-
-      dropdown.classList.toggle('dropdown--open')
-      togglePopup(popup)
-
-      toggleOverlay(() => {
-        dropdown.classList.toggle('dropdown--open')
-        togglePopup(popup)
-      })
-    }
-
-    const dropdownElements = document.querySelectorAll(".dropdown");
-    dropdownElements.forEach((element) => {
-      element.addEventListener('click', event => dropdownClickHandler(event))
+      new Glider(slider, initSlider(prevArrow, nextArrow, dots))
     })
+
 
   }
 </script>

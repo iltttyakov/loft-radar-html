@@ -10,6 +10,7 @@
 
 .authentication__content {
   padding: 40px 60px;
+  width: 520px;
 
   background: #FFFFFF;
   box-shadow: 0 10px 40px rgba(20, 32, 60, 0.1);
@@ -40,8 +41,70 @@
   &:hover {
     opacity: .7;
   }
+}
 
-  &:active {
-    opacity: .5;
+.authentication__form {
+  margin-bottom: 31px;
+}
+
+.authentication__footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.authentication__footer-label {
+  position: relative;
+
+  padding-left: 53px;
+  padding-right: 53px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #777D82;
+
+  &::after,
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+
+    width: 43px;
+    height: 1px;
+
+    background-color: #D9D9DE;
   }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.authentication__social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.authentication__item {
+  margin-right: 20px;
+  width: 100%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.authentication__social-button {
+  width: 100%;
 }

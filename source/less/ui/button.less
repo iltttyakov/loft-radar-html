@@ -1,3 +1,14 @@
+.button__icon {
+  margin-right: 10px;
+}
+
+.button__text {
+  position: relative;
+  top: 1px;
+
+  font-weight: 500;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -7,6 +18,9 @@
   min-height: 60px;
 
   color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
 
   background: linear-gradient(0deg, #3EAAD2, #3EAAD2), linear-gradient(0deg, #18B2E2, #18B2E2), linear-gradient(0deg, #0A8CEB, #0A8CEB), #2958FF;
   border-radius: 10px;
@@ -21,6 +35,21 @@
     padding: 7px 27px;
   }
 
+  &--secondary {
+    font-size: 16px;
+    line-height: 24px;
+
+    background: #E7EEF4;
+
+    .button__text {
+      color: #101112;
+    }
+  }
+
+  &:visited {
+    color: #FFFFFF;
+  }
+
   &:hover {
     opacity: .85;
   }
@@ -28,18 +57,4 @@
   &:active {
     opacity: .5;
   }
-}
-
-.button__icon {
-  margin-right: 10px;
-}
-
-.button__text {
-  position: relative;
-  top: 1px;
-
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  color: #FFFFFF;
 }
